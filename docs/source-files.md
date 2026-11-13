@@ -1,6 +1,6 @@
 # Original design files — upload checklist
 
-The original Proteus project is now available: **[over.and.under.voltage.device.pdsprj](../over.and.under.voltage.device.pdsprj)** in the repository root. The archive includes `ROOT.DSN` (schematic) and `ROOT.LYT` (PCB layout), so others can inspect the editable design in a compatible Proteus installation. The written documentation is based on the supplied graduation report.
+The repository now contains **14 curated project photographs and screenshots** under [`images/`](../images/); see the [captioned gallery](gallery.md). The original Proteus project is now available: **[over.and.under.voltage.device.pdsprj](../over.and.under.voltage.device.pdsprj)** in the repository root. The archive includes `ROOT.DSN` (schematic) and `ROOT.LYT` (PCB layout), so others can inspect the editable design in a compatible Proteus installation. The written documentation is based on the supplied graduation report.
 
 ## Schematic and circuit simulation
 
