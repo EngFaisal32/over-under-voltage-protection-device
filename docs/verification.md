@@ -1,5 +1,15 @@
 # Simulation, testing, and verification status
 
+## Screenshots from Proteus
+
+![Power supply oscilloscope simulation](../images/11-power-supply-waveforms.jpg)
+
+*Proteus simulated power supply waveform display — not a physical laboratory oscilloscope reading.*
+
+| Normal voltage | Undervoltage | Overvoltage |
+| --- | --- | --- |
+| ![Normal input simulated](../images/12-normal-voltage.jpg) | ![Low input simulated](../images/13-undervoltage.jpg) | ![High input simulated](../images/14-overvoltage.jpg) |
+
 ## Reported simulation / result-table values
 
 The university report records the following cases:
