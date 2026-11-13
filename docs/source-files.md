@@ -1,10 +1,10 @@
 # Original design files — upload checklist
 
-This repository currently contains a written summary of the project based on the graduation report. To let other engineers inspect the real design, add the original editable files when available.
+This repository currently contains a written summary of the project based on the graduation report. The owner has also supplied the native Proteus archive **`routing2.pdsprj`**, whose internal files include `ROOT.DSN` (schematic) and `ROOT.LYT` (PCB). **The binary archive has not yet been uploaded to GitHub.** Once it is uploaded to `proteus/routing2.pdsprj`, others will be able to inspect the original design in a compatible Proteus installation.
 
 ## Schematic and circuit simulation
 
-Upload to `schematic/` and `simulation/`:
+Upload the verified source archive to [`proteus/`](../proteus/), then optional exports to `schematic/` and `simulation/`:
 - Proteus project file(s)
 - Exported complete schematic (.png / .pdf)
 - Simulation screenshots or data
@@ -29,6 +29,6 @@ Upload a **redacted** report copy to `documentation/` only after removing studen
 
 ## Notion
 
-Add the public Notion project URL to `README.md` when the project page is published.
+The owner shared a Notion portfolio app link, which has been added to `README.md`. To make the portfolio visible to recruiters, the Notion page still needs to be published to the web and the link replaced with its public URL.
 
 **Important:** Do not publish confidential information, credentials, or data you do not have permission to distribute.
