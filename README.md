@@ -76,7 +76,7 @@ These examples are **reported simulation/test-table results, not verified physic
 
 ## Notion portfolio
 
-[Engineering Portfolio on Notion](https://app.notion.com/p/Engineering-Portfolio-414920417b9d8034a902d6caa11becf1?source=copy_link) — visual project presentation. The owner reports the page is published; for the best recruiter experience, replace this editing/app URL with Notion's **Copy web link** URL if different.
+[View the public Engineering Portfolio on Notion](https://guttural-galliform-d52.notion.site/Engineering-Portfolio-414920417b9d8034a902d6caa11becf1) — visual project presentation with photos, diagrams and development notes.
 
 ## Safety
 
