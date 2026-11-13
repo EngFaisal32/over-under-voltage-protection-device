@@ -11,6 +11,12 @@ An adjustable voltage-protection circuit designed to disconnect a connected load
 
 This project progressed from theoretical analysis and circuit design to schematic simulation, PCB layout, fabrication, soldering, checks, and enclosure design.
 
+![Assembled over/under voltage protection prototype](images/01-finished-prototype.jpg)
+
+*Physical PCB and transformer positioned inside the custom 3D enclosure.*
+
+**[Browse all 14 project photographs and diagrams](docs/gallery.md)**
+
 | Parameter | Design / reported value |
 | --- | --- |
 | Nominal AC input | 220 V, 50 Hz |
@@ -49,6 +55,32 @@ flowchart LR
 5. **Assembly:** Populated and soldered the board, checked component orientation, continuity and shorts.
 6. **Enclosure:** Designed an enclosure with separate space for the PCB and transformer in Shapr3D.
 
+## Project images
+
+| Full schematic | PCB routing layout |
+| --- | --- |
+| ![Protection circuit schematic](images/03-complete-schematic.jpg) | ![Proteus ARES PCB routing](images/05-pcb-layout.jpg) |
+
+| Physical board | 3D PCB model |
+| --- | --- |
+| ![Assembled circuit board](images/02-assembled-pcb.jpg) | ![Three-dimensional PCB layout](images/06-pcb-3d-model.jpg) |
+
+### PCB manufacturing: two approaches
+
+| Chemical etching | CNC production |
+| --- | --- |
+| ![PCB after chemical etching](images/08-chemical-etching.jpg) | ![PCB manufactured with CNC](images/09-cnc-manufacturing.jpg) |
+
+The initial manufacturing method had difficulties with fine traces and drill-hole placement; CNC machining provided a more accurate board for assembly.
+
+### Enclosure and simulation
+
+| 3D enclosure CAD | Simulated power supply waveforms |
+| --- | --- |
+| ![Custom 3D enclosure model](images/10-enclosure-cad.jpg) | ![Proteus virtual oscilloscope output](images/11-power-supply-waveforms.jpg) |
+
+See the [complete visual gallery](docs/gallery.md) for the comparator circuit, custom potentiometer footprint, and normal / under / over-voltage simulation screenshots.
+
 ## Example results from the report
 
 | Simulated input | Reported load state |
@@ -63,6 +95,7 @@ These examples are **reported simulation/test-table results, not verified physic
 
 ## Technical documentation
 
+- [Project image gallery (14 images)](docs/gallery.md)
 - [System design and components](docs/system-design.md)
 - [PCB design and fabrication](docs/pcb-and-manufacturing.md)
 - [Simulation and verification](docs/verification.md)
