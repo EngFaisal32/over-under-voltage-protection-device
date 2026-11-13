@@ -1,5 +1,23 @@
 # PCB design, manufacturing, and assembly
 
+## Visual evidence
+
+| PCB routing | PCB 3D model |
+| --- | --- |
+| ![PCB layout](../images/05-pcb-layout.jpg) | ![PCB 3D](../images/06-pcb-3d-model.jpg) |
+
+![Custom potentiometer footprint](../images/07-potentiometer-footprint.jpg)
+
+*Custom footprint developed for the project's potentiometer.*
+
+| Chemical-etched board | CNC-manufactured board |
+| --- | --- |
+| ![Etched PCB](../images/08-chemical-etching.jpg) | ![CNC PCB](../images/09-cnc-manufacturing.jpg) |
+
+![Assembled PCB](../images/02-assembled-pcb.jpg)
+
+*PCB populated and soldered after fabrication.*
+
 ## PCB layout
 
 The original circuit was transferred to Proteus ARES for PCB design. The report describes component placement, track routing, grounding considerations and separating power-related elements from sensitive control stages.
