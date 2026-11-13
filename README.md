@@ -72,11 +72,11 @@ These examples are **reported simulation/test-table results, not verified physic
 
 ## Gallery and native source files
 
-Screenshots of the actual schematic, PCB, prototype and enclosure will be added from the owner's original project files when available. The original Proteus project archive `routing2.pdsprj` has been supplied and verified to contain both `ROOT.DSN` (schematic) and `ROOT.LYT` (PCB layout). The binary archive still needs to be uploaded to `proteus/routing2.pdsprj`; Gerber and Shapr3D files are not yet included.
+**Native Proteus source:** [over.and.under.voltage.device.pdsprj](./over.and.under.voltage.device.pdsprj) (uploaded in the repository root). The archive includes `ROOT.DSN` (schematic) and `ROOT.LYT` (PCB layout). Full-resolution project images, Gerber exports and native Shapr3D files may be added later.
 
 ## Notion portfolio
 
-[Engineering Portfolio on Notion](https://app.notion.com/p/Engineering-Portfolio-414920417b9d8034a902d6caa11becf1?source=copy_link) — includes the project overview and visual presentation. **Note:** The page owner must publish the Notion page to the web for visitors without a Notion account to view it.
+[Engineering Portfolio on Notion](https://app.notion.com/p/Engineering-Portfolio-414920417b9d8034a902d6caa11becf1?source=copy_link) — visual project presentation. The owner reports the page is published; for the best recruiter experience, replace this editing/app URL with Notion's **Copy web link** URL if different.
 
 ## Safety
 
