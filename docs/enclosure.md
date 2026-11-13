@@ -2,6 +2,12 @@
 
 A custom enclosure was designed in **Shapr3D** for the PCB and step-down transformer.
 
+## Photos and model
+
+| Enclosure CAD | PCB and transformer in enclosure |
+| --- | --- |
+| ![Shapr3D enclosure model](../images/10-enclosure-cad.jpg) | ![Physical project in enclosure](../images/01-finished-prototype.jpg) |
+
 ## Design intent
 
 - Separate PCB and transformer placement areas
