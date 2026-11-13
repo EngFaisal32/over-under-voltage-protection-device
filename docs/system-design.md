@@ -4,6 +4,16 @@
 
 The project monitors an AC supply and controls a relay-operated load based on adjustable upper and lower voltage limits.
 
+## Original circuit illustrations
+
+![Complete circuit schematic](../images/03-complete-schematic.jpg)
+
+*Full voltage protection schematic supplied with the project.*
+
+![Comparator reference and detection stages](../images/04-comparator-stage.jpg)
+
+*Voltage sensing and comparison portion of the design.*
+
 ## Circuit stages
 
 1. **Transformer:** steps nominal 220 V AC down to 24 V AC.
