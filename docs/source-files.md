@@ -29,6 +29,6 @@ Upload a **redacted** report copy to `documentation/` only after removing studen
 
 ## Notion
 
-The owner reports the Notion portfolio is published and has shared an app link, which has been added to `README.md`. Ideally use the published **Copy web link** URL to ensure visitors can open it without signing in; external anonymous access has not been independently verified.
+The published Notion portfolio URL is linked from `README.md`: https://guttural-galliform-d52.notion.site/Engineering-Portfolio-414920417b9d8034a902d6caa11becf1. The user supplied the published link. External anonymous accessibility could not be independently verified.
 
 **Important:** Do not publish confidential information, credentials, or data you do not have permission to distribute.
