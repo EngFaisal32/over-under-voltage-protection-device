@@ -1,43 +1,87 @@
 # Over/Under Voltage Protection Device
 
-**Electrical & Electronics Engineering | Graduation Project**
+**Electrical & Electronics Engineering · Graduation Project**  
+**Proteus simulation · Circuit design · PCB layout · Manufacturing · Custom enclosure**
 
-## Project Overview
+An adjustable voltage-protection circuit designed to disconnect a connected load when the AC supply falls outside a selected operating range.
 
-Design and development of an automatic overvoltage and undervoltage protection device to protect electrical equipment against abnormal supply voltage conditions.
+> **Project status:** Simulated protection behavior and a manufactured, populated PCB in a custom enclosure are documented. Full powered protection testing of the finished physical device is **not established by the supplied report**.
 
-The project covers circuit simulation, electronic component selection, schematic design, PCB layout, manufacturing, assembly, and custom enclosure design.
+## Project overview
 
-## Technical Specifications
+This project progressed from theoretical analysis and circuit design to schematic simulation, PCB layout, fabrication, soldering, checks, and enclosure design.
 
-- Nominal supply: 220 V AC, 50 Hz
-- Transformer output: 24 V AC
-- Regulated control voltage: 12 V DC
-- Designed operating range: 200–240 V AC
-- Protection mechanism: Voltage comparators and relay switching
-- Adjustable upper and lower voltage thresholds
+| Parameter | Design / reported value |
+| --- | --- |
+| Nominal AC input | 220 V, 50 Hz |
+| Transformer | 220 V AC → 24 V AC |
+| Control supply | 12 V DC, 7812 regulator |
+| Normal operating window used in simulation | Approximately 200–240 V AC |
+| Detection | Upper- and lower-limit comparator stages |
+| Output control | Logic, driver and relay / contactor |
+| Adjustment | Potentiometers controlling thresholds |
+| Design software | Proteus / Proteus ARES |
+| Enclosure software | Shapr3D |
+| PCB manufacturing | Toner transfer + chemical etching; later CNC machining/drilling |
 
-## Project Development
+## Functional architecture
 
-1. Circuit design and simulation using Proteus
-2. Component selection and electrical calculations
-3. PCB layout design using Proteus ARES
-4. Custom potentiometer footprint development
-5. PCB manufacturing using chemical etching and CNC
-6. Electronic component assembly and soldering
-7. Electrical continuity and short-circuit checks
-8. Custom 3D enclosure design using Shapr3D
+```mermaid
+flowchart LR
+    A["220 V AC"] --> B["Step-down transformer"]
+    B --> C["Rectifier / filter"]
+    C --> D["12 V regulation"]
+    C --> E["Voltage sensing"]
+    E --> F["Upper / lower comparators"]
+    F --> G["Control logic and relay driver"]
+    D --> G
+    G --> H["Load-switching relay"]
+```
 
-## Tools & Technologies
+*Functional block diagram only; use the native schematic to verify circuit-level connections.*
 
-Proteus | Proteus ARES | Shapr3D | PCB Design | CNC Manufacturing | Electronics | Circuit Simulation
+## Engineering workflow
 
-## Project Documentation
+1. **Analysis and schematic:** Selected components, calculated circuit parameters and designed the protection circuit.
+2. **Simulation:** Evaluated the power supply and load switching under normal, low and high input voltage in Proteus.
+3. **PCB design:** Placed components and routed the board in Proteus ARES, including a custom potentiometer footprint.
+4. **Manufacturing iteration:** Attempted toner-transfer / chemical etching; improved board fabrication with CNC tooling after trace and drilling problems.
+5. **Assembly:** Populated and soldered the board, checked component orientation, continuity and shorts.
+6. **Enclosure:** Designed an enclosure with separate space for the PCB and transformer in Shapr3D.
 
-Technical files, schematics, PCB layouts, simulation results, and prototype images are organized in this repository as they become available.
+## Example results from the report
 
-## Portfolio
+| Simulated input | Reported load state |
+| --- | --- |
+| 195 V | OFF (undervoltage) |
+| 200 V | ON |
+| 220 V | ON |
+| 240 V | ON |
+| 245 V | OFF (overvoltage) |
 
-View the complete project presentation on my Notion engineering portfolio.
+These examples are **reported simulation/test-table results, not verified physical prototype trip measurements**. The report uses slightly differing threshold descriptions, so a hardware-calibrated threshold is not claimed. See [verification notes](docs/verification.md).
 
-*Notion project link to be added.*
+## Technical documentation
+
+- [System design and components](docs/system-design.md)
+- [PCB design and fabrication](docs/pcb-and-manufacturing.md)
+- [Simulation and verification](docs/verification.md)
+- [Enclosure design](docs/enclosure.md)
+- [Team attribution and contributions](docs/contributions.md)
+- [Original project files checklist](docs/source-files.md)
+
+## Gallery and native source files
+
+Screenshots of the actual schematic, PCB, prototype and enclosure will be added from the owner's original project files when available. Native Proteus / ARES, Gerber and Shapr3D files are not yet included.
+
+## Notion portfolio
+
+A visual project case study is also being built in Notion; link to be added.
+
+## Safety
+
+Academic proof-of-concept only. **Not a certified mains protection device.** Live electrical use requires suitable insulation, protective devices, enclosure design and supervised verification.
+
+---
+
+*Based on the supplied university graduation project report. The report describes a group project; see [attribution](docs/contributions.md) for accurate credit.*
